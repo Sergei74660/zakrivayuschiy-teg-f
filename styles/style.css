@@ -222,6 +222,8 @@
   min-height: 55px;
   gap: 4px;
   display: flex;
+  /* отступ нижний */
+  margin-block-end: 100px;
 }
 
 .decorated_button_text {
@@ -320,10 +322,15 @@ body:has(.floppy_dialog[open]) {
   }
 
   .header {
-    padding-top: 122px;
+    /* padding-top: 122px;
     padding-bottom: 119px;
     margin-top: 27vw;
-    margin-bottom: 28vw;
+    margin-bottom: 28vw; */
+    min-height: 50vh;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 26vw;
+    margin-bottom: 27vw;
   }
 
   .header_title {
@@ -335,8 +342,8 @@ body:has(.floppy_dialog[open]) {
   }
 
   .card_label {
-    top: 20px;
-    right: 10px;
+    top: 27px;
+    right: 27px;
   }
 
   .save_button {
@@ -372,6 +379,6 @@ body:has(.floppy_dialog[open]) {
 
   .article_info {
     /* padding: 16px 28px 25px 27px; */
-    padding: 22px 28px 25px 27px;
+    padding: 20px 28px 25px 27px;
    }
 }
