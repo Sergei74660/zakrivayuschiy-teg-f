@@ -114,7 +114,7 @@
 }
 
 .article_info {
-  padding: 16px 28px 25px 27px;
+  padding: 20px 28px 25px 27px;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
@@ -183,18 +183,26 @@
 .card__like-button {
   padding-block: 8px;
   align-self: end;
+  /* width: 118px; */
   width: 130px;
+  height: 38px;
 }
 
 .card__icon-button {
-  height: 100%;
+  max-height: 38px;
+  max-width: 38px;
   display: flex;
   background-color: transparent;
-  border: none;
+  border: 2px solid transparent;
   outline: 2px solid transparent;
   transition: outline 0.3s ease;
   align-self: center;
-  padding-inline: 0;
+  padding: 0;
+  border-color: transparent;
+}
+
+.card__icon-button:focus-visible {
+  border-color: 2px solid var(--color);
 }
 
 .mix_difference {
@@ -322,28 +330,8 @@ body:has(.floppy_dialog[open]) {
   }
 
   .header {
-    /* padding-top: 122px;
-    padding-bottom: 119px;
-    margin-top: 27vw;
-    margin-bottom: 28vw; */
-   
-   
-    /* min-height: 50vh;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-top: 26vw;
-    margin-bottom: 27vw; */
-
-
-    /* min-height: 49vh;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-top: 27vw;
-    margin-bottom: 28vw; */
-
-    min-height: 49vh;
-    padding-top: 0.9em;
-    padding-bottom: 1em;
+    padding-top: 6.9em;
+    padding-bottom: 6.7em;
     margin-top: 26.7vw;
     margin-bottom: 27vw;
   }
@@ -351,9 +339,6 @@ body:has(.floppy_dialog[open]) {
   .header_title {
     line-height: 49px;
     letter-spacing: normal;
-  }
-  .article_title {
-    padding: 4px 12px;
   }
 
   .card_label {
@@ -367,6 +352,7 @@ body:has(.floppy_dialog[open]) {
     height: 84px;
     margin: 0;
     gap: 4px;
+    margin-block-end: 100px;
   }
 
   .floppy_svg {
@@ -379,8 +365,8 @@ body:has(.floppy_dialog[open]) {
     margin-bottom: 4px;
   }
   .article_text:not(:last-of-type) {
-    /* margin-block-end: 26px; */
-    margin-block-end: 21px;
+    margin-block-end: 26px;
+    /* margin-block-end: 21px; */
   }
   .article:nth-child(3) .article_image {
     filter: saturate(3.5);
@@ -391,15 +377,10 @@ body:has(.floppy_dialog[open]) {
 
   .article_text:last-of-type {
     /* margin-block-end: 21px; */
-    margin-block-end: 24px;
+    margin-block-end: 23px;
   }
 
   .article_info {
-    /* padding: 16px 28px 25px 27px; */
-
-
-    /* padding: 20px 28px 25px 27px; */
-
-    padding: 18px 27px 25px 27px;
-   }
+    padding: 19px 27px 25px 27px;
+  }
 }
