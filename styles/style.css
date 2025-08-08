@@ -125,7 +125,7 @@
 }
 
 .article_text:last-of-type {
-  margin-block-end: 25px;
+  margin-block-end: 21px;
 }
 
 .filter_brightness {
@@ -187,7 +187,7 @@
 }
 
 .card__icon-button {
-  height: 34px;
+  height: 100%;
   display: flex;
   background-color: transparent;
   border: none;
@@ -326,10 +326,25 @@ body:has(.floppy_dialog[open]) {
     padding-bottom: 119px;
     margin-top: 27vw;
     margin-bottom: 28vw; */
-    min-height: 50vh;
+   
+   
+    /* min-height: 50vh;
     padding-top: 1em;
     padding-bottom: 1em;
     margin-top: 26vw;
+    margin-bottom: 27vw; */
+
+
+    /* min-height: 49vh;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 27vw;
+    margin-bottom: 28vw; */
+
+    min-height: 49vh;
+    padding-top: 0.9em;
+    padding-bottom: 1em;
+    margin-top: 26.7vw;
     margin-bottom: 27vw;
   }
 
@@ -364,7 +379,8 @@ body:has(.floppy_dialog[open]) {
     margin-bottom: 4px;
   }
   .article_text:not(:last-of-type) {
-    margin-block-end: 26px;
+    /* margin-block-end: 26px; */
+    margin-block-end: 21px;
   }
   .article:nth-child(3) .article_image {
     filter: saturate(3.5);
@@ -374,11 +390,16 @@ body:has(.floppy_dialog[open]) {
   }
 
   .article_text:last-of-type {
-    margin-block-end: 21px;
+    /* margin-block-end: 21px; */
+    margin-block-end: 24px;
   }
 
   .article_info {
     /* padding: 16px 28px 25px 27px; */
-    padding: 20px 28px 25px 27px;
+
+
+    /* padding: 20px 28px 25px 27px; */
+
+    padding: 18px 27px 25px 27px;
    }
 }
